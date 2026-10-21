@@ -1,6 +1,10 @@
 # condition-circleci
 
 [![Latest Release](https://img.shields.io/github/v/release/SemRels/condition-circleci?label=version&color=blue)](https://github.com/SemRels/condition-circleci/releases/latest)
+[![CI](https://github.com/SemRels/condition-circleci/actions/workflows/ci.yml/badge.svg)](https://github.com/SemRels/condition-circleci/actions/workflows/ci.yml)
+[![License](https://img.shields.io/github/license/SemRels/condition-circleci)](LICENSE)
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/SemRels/condition-circleci/badge)](https://scorecard.dev/viewer/?uri=github.com/SemRels/condition-circleci)
+[![REUSE status](https://api.reuse.software/badge/github.com/SemRels/condition-circleci)](https://api.reuse.software/info/github.com/SemRels/condition-circleci)
 
 Allows releases only when semrel is running inside CircleCI.
 
