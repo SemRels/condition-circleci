@@ -38,17 +38,19 @@ cosign verify ghcr.io/semrels/condition-circleci:latest \
 
 ```yaml
 plugins:
-  - name: condition-circleci
-    path: ~/.semrel/plugins/semrel-plugin-condition-circleci
-    env:
-      {}
+  - uses: "@semrel/condition-circleci"
+    phase: condition
+    args:
+      branch: "main"
 ```
 
-## `SEMREL_PLUGIN_*` variables
+## Options
 
-| Name | Required | Description | Default |
-| --- | --- | --- | --- |
-| `SEMREL_PLUGIN_BRANCH` | no | Optional branch name override. When set, require `CIRCLE_BRANCH` to match this value. | unset |
+Every option can be set as an entry under `args` in `.semrel.yaml`. semrel passes each entry to the plugin as the environment variable shown in the table, so you can also set that variable directly (for example in your CI environment) instead of using `args`.
+
+| Argument | Environment variable | Required | Description | Default |
+| --- | --- | --- | --- | --- |
+| `branch` | `SEMREL_PLUGIN_BRANCH` | no | Optional branch name override. When set, require `CIRCLE_BRANCH` to match this value. | unset |
 
 ## `SEMREL_*` release context used
 
