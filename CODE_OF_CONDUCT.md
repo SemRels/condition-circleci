@@ -1,6 +1,6 @@
 # Code of Conduct
 
-condition-circleci is committed to providing a welcoming and harassment-free community.
+`condition-circleci` is committed to providing a welcoming and harassment-free community.
 
 ## Our Pledge
 
